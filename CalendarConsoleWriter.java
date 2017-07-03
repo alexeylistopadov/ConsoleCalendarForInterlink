@@ -11,7 +11,8 @@ public class CalendarConsoleWriter {
     }
 
     public String getTextColor(MonthCalendar monthCalendar, String day, int i) {
-        if (day.equals(Integer.toString(monthCalendar.getCurrentDate().getDayOfMonth())) && monthCalendar.getCurrentDate().getMonth() == monthCalendar.getSelectedDate().getMonth()) {
+        if (day.equals(Integer.toString(monthCalendar.getCurrentDate().getDayOfMonth()))
+                && monthCalendar.getCurrentDate().getMonth() == monthCalendar.getSelectedDate().getMonth()) {
             return "\u001B[34m";
         } else if (i >= 5) {
             return "\u001B[31m";
